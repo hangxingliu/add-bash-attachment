@@ -1,0 +1,32 @@
+{
+  "name": "add-bash-attachment",
+  "version": "0.1.0",
+  "description": "A Node.js utils/module be used for add attachment files into bash script.",
+  "main": "index.js",
+  "devDependencies": {
+    "@hangxingliu/assert": "^0.1.1",
+    "@types/node": "^10.0.4",
+    "mocha": "^5.1.1"
+  },
+  "bin": {
+    "add-bash-attachment": "node ./bin"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hangxingliu/add-bash-attachment.git"
+  },
+  "keywords": [
+    "http",
+    "uri",
+    "parser"
+  ],
+  "author": "Liu Yue",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hangxingliu/add-bash-attachment/issues"
+  },
+  "homepage": "https://github.com/hangxingliu/add-bash-attachment#readme"
+}
