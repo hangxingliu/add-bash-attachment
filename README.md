@@ -7,15 +7,34 @@ A Node.js utils/module be used for add attachment files into bash script.
 ## Install
 
 ``` bash
-npm install add-bash-attachment
+npm install add-bash-attachment --global
 ```
 
 ## Usage
+
+### As command line tools:
 
 ``` bash
 add-bash-attachment --input raw.sh \
 	--file signs.key --file sources.list \
 	--output install.sh
+```
+
+### As a Node.js module:
+
+``` javascript
+const { addAttachments } = require('add-bash-attachment');
+addAttachments({
+	inputFile: 'raw.sh',
+	attachments: [{
+		name: 'data.bin',
+		content: fs.readFileSync('data.bin'),
+	}]
+}).then(newScript => {
+	console.log(newScript);
+}).catch(error => {
+	console.error(error);
+});
 ```
 
 ## Principle
