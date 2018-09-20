@@ -1,6 +1,6 @@
 {
   "name": "add-bash-attachment",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Node.js utils/module be used for add attachment files into bash script.",
   "main": "index.js",
   "devDependencies": {
@@ -9,7 +9,7 @@
     "mocha": "^5.1.1"
   },
   "bin": {
-    "add-bash-attachment": "node ./bin"
+    "add-bash-attachment": "./bin"
   },
   "scripts": {
     "test": "mocha test/**/*.test.js"
